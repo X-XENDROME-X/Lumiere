@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="path_to_your_logo.png" alt="Lumière Logo" width="200"/>
+  <img src="images/logo.png" alt="Lumière Logo" width="200"/>
 </p>
 
 # Lumière - Illuminate Your Entertainment Universe 🌟
