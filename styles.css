@@ -43,14 +43,17 @@ body {
 }
 
 .navbar__brand {
-  width: 120px;
+  width: 120px; 
   height: auto;
   padding: 0.5rem;
+  display: flex;
+  align-items: center;
 }
 
 .brand__logo {
   width: 100%;
   height: 100%;
+  object-fit: contain; 
 }
 
 .language__drop__down {
@@ -431,6 +434,7 @@ footer {
 
   .navbar__brand {
     width: 150px;
+    padding: 0.75rem;
   }
 
   .footer__row__2 {
@@ -529,6 +533,7 @@ footer {
 
   .navbar__brand {
     width: 180px;
+    padding: 1rem;
   }
 
   .signin__button {
