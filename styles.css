@@ -30,11 +30,16 @@ body {
 
 
 .navbar {
-  padding: 1rem;
+  padding: 1rem 4rem;
   background: rgba(0, 0, 0, 0.9);
   height: 80px;
   display: flex;
+  justify-content: space-between; 
   align-items: center;
+  width: 100%; 
+  position: fixed;
+  top: 0; 
+  z-index: 100; 
 }
 
 .navbar__brand {
@@ -80,7 +85,7 @@ body {
 .navbar__nav__items {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .hero__bg__image__container {
@@ -417,7 +422,11 @@ footer {
 
 @media (min-width: 768px) {
   .navbar {
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
+  }
+
+  .navbar__nav__items {
+    gap: 1.5rem;
   }
 
   .navbar__brand {
@@ -532,7 +541,7 @@ footer {
   }
 
   .navbar__nav__items {
-    gap: 30px;
+    gap: 2rem;
   }
 
   .hero__card {
@@ -621,3 +630,18 @@ footer {
 }
 
 @media (min-width: 1254px) {}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .navbar__brand {
+    width: 100px;
+  }
+
+  .navbar__nav__items {
+    gap: 0.5rem;
+  }
+}
