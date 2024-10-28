@@ -1,145 +1,326 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lumière - Stream Unlimited Movies</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="description" content="Lumière: Illuminate Your Entertainment World">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    rel="stylesheet">
+  <title>Lumière</title>
+  <link rel="icon" href="images/logoclear.png">
 </head>
+
 <body>
-    <!-- Navbar -->
+  <header>
     <nav class="navbar">
-        <div class="navbar__brand">
-            <img src="images/logoclear.png" alt="Lumière logo" class="brand__logo">
+      <div class="navbar__brand">
+        <img src="images/logoclear.png" alt="logo" class="brand__logo" />
+      </div>
+
+      <div class="navbar__nav__items">
+        <div class="nav__item">
+          <div class="dropdown__container">
+            <i class="fas fa-globe"></i>
+            <select name="languages" id="languagesSelect" class="language__drop__down">
+              <option value="english" selected style="color: black">
+                English
+              </option>
+              <option value="hindi" style="color: black">हिन्दी</option>
+            </select>
+          </div>
         </div>
 
-        <div class="navbar__nav__items">
-            <div class="dropdown__container">
-                <select class="language__drop__down">
-                    <option>English</option>
-                    <option>हिन्दी</option>
-                </select>
-            </div>
-            <button class="signin__button">Sign in</button>
+        <div class="nav__item">
+          <button class="signin__button">Sign in</button>
         </div>
+      </div>
     </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <main role="main">
-        <section class="hero">
-            <div class="hero__bg__image__container">
-                <img src="https://i.postimg.cc/X7bC6ptn/IN-en-20210719-popsignuptwoweeks-perspective-alpha-website-small.jpg" 
-                     alt="Background" class="hero__bg__image">
-                <div class="hero__bg__overlay"></div>
-            </div>
+  <main>
+    <section class="hero">
+      <div class="hero__bg__image__container">
+        <img
+          src="https://i.postimg.cc/X7bC6ptn/IN-en-20210719-popsignuptwoweeks-perspective-alpha-website-small.jpg"
+          alt="BG hero image" class="hero__bg__image" />
+      </div>
+      <div class="hero__bg__overlay"></div>
 
-            <div class="hero__card">
-                <h1 class="hero__title">Unlimited Movies, Bingeworthy Shows.</h1>
-                <p class="hero__subtitle">Stream on any device, freedom to cancel anytime.</p>
-                <p class="hero__description">Start your Lumière journey. Sign in or create an account.</p>
-                
-                <div class="email__form__container">
-                    <div class="form__container">
-                        <input type="email" class="email__input" placeholder="Email Address">
-                    </div>
-                    <button class="primary__button">Get Started</button>
-                </div>
-            </div>
-        </section>
+      <div class="hero__card">
+        <h1 class="hero__title">
+          Unlimited Movies,<br />
+          Bingeworthy Shows.
+        </h1>
+        <p class="hero__subtitle">Stream on any device, freedom to cancel anytime.</p>
+        <p class="hero__description">
+          Start your Lumière journey.
+          Sign in or create an account .
+        </p>
 
-        <!-- Features Section -->
-        <section class="features__container">
-            <!-- Feature 1 -->
-            <div class="feature">
-                <div class="feature__details">
-                    <h2 class="feature__title">Catch it on the big screen.</h2>
-                    <h5 class="feature__sub__title">Unleash the entertainment on all your devices.</h5>
-                </div>
-                <div class="feature__image__container">
-                    <img src="https://i.postimg.cc/YSsW58BP/tv.png" alt="TV Feature" class="feature__image">
-                </div>
-            </div>
-
-            <!-- Feature 2 -->
-            <div class="feature">
-                <div class="feature__details">
-                    <h2 class="feature__title">Never miss an episode!</h2>
-                    <h5 class="feature__sub__title">Download shows for uninterrupted viewing.</h5>
-                </div>
-                <div class="feature__image__container">
-                    <img src="https://i.postimg.cc/ZqRNs223/mobile-0819.jpg" alt="Mobile Feature" class="feature__image">
-                </div>
-            </div>
-
-            <!-- Add other features similarly -->
-        </section>
-
-        <!-- FAQ Section -->
-        <section class="FAQ__list__container">
-            <h2 class="FAQ__heading">Frequently Asked Questions</h2>
-            <div class="FAQ__list">
-                <div class="FAQ__accordian">
-                    <button class="FAQ__title">What is Lumière?
-                        <span>+</span>
-                    </button>
-                    <div class="FAQ__visible">
-                        <p>Lumière is a streaming service that offers an extensive collection of critically acclaimed TV shows, movies, anime, documentaries, and more -- accessible on numerous internet-connected devices.</p>
-                    </div>
-                </div>
-                <!-- Add other FAQ items similarly -->
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer__content">
-            <div class="footer__row__1">
-                <h4>Questions? Call 264-932-386-2351</h4>
-            </div>
-
-            <div class="footer__row__2">
-                <div class="column__1">
-                    <a href="#">FAQ</a>
-                    <a href="#">Investor Relations</a>
-                    <a href="#">Privacy</a>
-                    <a href="#">Speed Test</a>
-                </div>
-                <div class="column__2">
-                    <a href="#">Help Centre</a>
-                    <a href="#">Jobs</a>
-                    <a href="#">Cookie Preferences</a>
-                    <a href="#">Legal Notices</a>
-                </div>
-                <div class="column__3">
-                    <a href="#">Account</a>
-                    <a href="#">Ways to Watch</a>
-                    <a href="#">Corporate Information</a>
-                    <a href="#">Only on Lumière</a>
-                </div>
-                <div class="column__4">
-                    <a href="#">Media Centre</a>
-                    <a href="#">Terms of Use</a>
-                    <a href="#">Contact Us</a>
-                </div>
-            </div>
-
-            <div class="footer__row__3">
-                <div class="dropdown__container">
-                    <select class="language__drop__down">
-                        <option>English</option>
-                        <option>हिन्दी</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="footer__row__4">
-                <p>© Lumière 2024</p>
-            </div>
+        <div class="email__form__container">
+          <div class="form__container">
+            <input type="email" class="email__input" placeholder=" " />
+            <label class="email__label">Email Address</label>
+          </div>
+          <button class="primary__button" class="">
+            Get Started <i class="fal fa-chevron-right"></i>
+          </button>
         </div>
-    </footer>
+      </div>
 
-    <script src="index.js"></script>
+    </section>
+    <section class="features__container">
+      <div class="feature">
+        <div class="feature__details">
+          <h3 class="feature__title">Catch it on the big screen.</h3>
+          <h5 class="feature__sub__title">
+            Unleash the entertainment on all your devices.
+          </h5>
+        </div>
+        <div class="feature__image__container">
+          <img src="https://i.postimg.cc/YSsW58BP/tv.png" alt="Feature image"
+            class="feature__image" />
+          <div class="feature__backgroud__video__container">
+            <video autoplay="" loop="" muted="" class="feature__backgroud__video">
+              <source
+                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+                type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="feature__details">
+          <h3 class="feature__title">
+            Never miss an episode! Download shows for uninterrupted viewing.
+          </h3>
+          <h5 class="feature__sub__title">
+            Build your watchlist in a snap: Save your favorites for easy access.
+          </h5>
+        </div>
+        <div class="feature__image__container">
+          <img src="https://i.postimg.cc/ZqRNs223/mobile-0819.jpg" alt="Feature image"
+            class="feature__image" />
+          <div class="feature__2__poster__container">
+            <div class="poster__container">
+              <img src="https://i.postimg.cc/zBynv6k5/boxshot.png" alt="poster"
+                class="poster" />
+            </div>
+            <div class="poster__details">
+              <h4>Stranger Things</h4>
+              <h6>Downloading...</h6>
+            </div>
+            <div class="download__gif__container">
+              <img src="https://i.postimg.cc/Sx47dZm7/download-icon.gif"
+                alt="downloading gif" class="gif" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="feature__details">
+          <h3 class="feature__title">Entertainment unbound.</h3>
+          <h5 class="feature__sub__title">
+            A universe of entertainment, at your fingertips.
+          </h5>
+        </div>
+        <div class="feature__image__container feature__3__image__container">
+          <img src="https://i.postimg.cc/J0TKvZK4/device-pile-in.png" alt="Feature image"
+            class="feature__image feature__3__image" />
+          <div
+            class="feature__backgroud__video__container feature__3__backgroud__video__container">
+            <video autoplay="" loop="" muted=""
+              class="feature__backgroud__video feature__3__backgroud__video">
+              <source
+                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v"
+                type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="feature__details">
+          <h3 class="feature__title">Create personalized spaces for young explorers.</h3>
+          <h5 class="feature__sub__title">
+            Embark on epic journeys with beloved characters!
+          </h5>
+        </div>
+        <div class="feature__image__container">
+          <img
+            src="https://i.postimg.cc/YSh7sz3j/AAAABVxd-X2-Wn-FSp49e-Xb1do0euaj-F8up-NImjof-E77-XSt-Khf5k-UHG94-DPl-Ti-GYq-Pe-YNtiox-82-NWEK0-Ls3-Cn-Le3-WWCl-Gdi-JP.png"
+            alt="Feature image" class="feature__image" />
+        </div>
+      </div>
+    </section>
+    <section class="FAQ__list__container">
+      <h1 class="FAQ__heading">Frequently Asked Questions</h1>
+      <div class="FAQ__list">
+        <div class="FAQ__accordian">
+          <button class="FAQ__title">
+            What is Lumière?<i class="fal fa-plus"></i>
+          </button>
+          <div class="FAQ__visible">
+            <p>
+              Lumière is a streaming service that offers an extensive collection of
+              critically acclaimed TV shows, movies, anime, documentaries, and more –
+              accessible on numerous internet-connected devices.
+            </p>
+            <p>
+              Enjoy unlimited viewing without any interruptions – all for a single
+              affordable monthly fee. There's always something fresh to explore, with new
+              TV shows and movies added every week!
+            </p>
+          </div>
+        </div>
+        <div class="FAQ__accordian">
+          <button class="FAQ__title">
+            How much does Lumière cost?<i class="fal fa-plus"></i>
+          </button>
+          <div class="FAQ__visible">
+            <p>
+              Enjoy all Lumière has to offer for a single, fixed monthly fee, starting at
+              just $10. No hidden charges, no contracts, just pure entertainment freedom.
+            </p>
+          </div>
+        </div>
+        <div class="FAQ__accordian">
+          <button class="FAQ__title">
+            Where can I Watch?<i class="fal fa-plus"></i>
+          </button>
+          <div class="FAQ__visible">
+            <p>
+              Enjoy your favorite content wherever you go, whenever you want, on all your
+              devices. Access your Lumière account to start streaming immediately on our
+              website, Lumière.com, using your computer or any device connected to the
+              internet that supports the Lumière application, including smart televisions,
+              mobile phones, tablets, streaming devices, and gaming consoles.
+            </p>
+            <p>
+              You also have the option to download your preferred shows and movies using
+              our iOS, Android, or Windows 10 applications. Take advantage of the download
+              feature to enjoy offline viewing when you're on the move or don't have
+              access to an internet connection. Experience the flexibility of taking
+              Lumière with you wherever life takes you.
+            </p>
+          </div>
+        </div>
+        <div class="FAQ__accordian">
+          <button class="FAQ__title">
+            How do I cancel?<i class="fal fa-plus"></i>
+          </button>
+          <div class="FAQ__visible">
+            <p>
+              Lumière adapts to your ever-changing needs without the constraints of
+              cumbersome contracts or long-term obligations. We understand that life can
+              be unpredictable, which is why we've made it effortless for you to cancel
+              your account online with just a couple of clicks. You won't encounter any
+              frustrating cancellation fees or jumping through hoops - with Lumière,
+              you're in the driver's seat. Start or pause your account at any time, giving
+              you the ultimate control and peace of mind over your streaming experience.
+            </p>
+          </div>
+        </div>
+        <div class="FAQ__accordian">
+          <button class="FAQ__title">
+            What can I watch from Lumière?<i class="fal fa-plus"></i>
+          </button>
+          <div class="FAQ__visible">
+            <p>
+              Dive into Lumière's vast collection of captivating content, featuring an
+              impressive array of feature films, thought-provoking documentaries,
+              binge-worthy TV shows, immersive anime, and critically acclaimed Lumière
+              original productions. With such a diverse and expansive library at your
+              fingertips, you'll never run out of exciting viewing options. Lumière has
+              you covered with an unparalleled selection that caters to every taste and
+              preference.
+            </p>
+          </div>
+        </div>
+        <div class="FAQ__accordian">
+          <button class="FAQ__title">
+            Is Lumière good for kids?<i class="fal fa-plus"></i>
+          </button>
+          <div class="FAQ__visible">
+            <p>
+              Lumière understands the importance of providing a safe and enjoyable
+              streaming environment for the entire family. That's why your membership
+              includes access to Lumière Kids, a dedicated space designed specifically for
+              young viewers. With Lumière Kids, parents can have peace of mind knowing
+              that their children are exploring a curated selection of age-appropriate TV
+              shows and films.
+            </p>
+            <p>
+              Lumière goes the extra mile to ensure that kids have a safe and
+              age-appropriate streaming experience by offering PIN-protected parental
+              controls within the kids' profiles. These customizable settings empower
+              parents to set boundaries and tailor the content their children can access.
+              With the ability to restrict the maturity rating of shows and movies, you
+              can ensure that your kids only watch content suitable for their age group.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="FAQ__get__started__email">
+        <h3>
+          Prepare to embark on an extraordinary streaming journey with Lumière.
+        </h3>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer__row__1">
+      <h4>Questions? Call 264-932-386-2351</h4>
+    </div>
+    <div class="footer__row__2">
+      <div class="column__1">
+        <p>FAQ</p>
+        <p>Investor Relations</p>
+        <p>Privacy</p>
+        <p>Speed Test</p>
+      </div>
+      <div class="column__2">
+        <p>Help Centre</p>
+        <p>Jobs</p>
+        <p>Cookie Preferences</p>
+        <p>Legal Notices</p>
+      </div>
+      <div class="column__3">
+        <p>Account</p>
+        <p>Ways to Watch</p>
+        <p>Corporate Information</p>
+        <p>Only on Lumière</p>
+      </div>
+      <div class="column__4">
+        <p>Media Centre</p>
+        <p>Terms of Use</p>
+        <p>Contact Us</p>
+      </div>
+    </div>
+    <div class="footer__row__3">
+      <div class="dropdown__container">
+        <i class="fas fa-globe"></i>
+        <select name="languages" id="languagesSelect" class="language__drop__down">
+          <option value="english" selected>English</option>
+          <option value="hindi">हिन्दी</option>
+        </select>
+      </div>
+    </div>
+    <div class="footer__row__4">
+      <p> &copy; Lumière 2024</p>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
 </body>
+
 </html>
