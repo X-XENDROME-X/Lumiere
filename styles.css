@@ -28,23 +28,28 @@ body {
 
 
 .navbar {
-  position: absolute;
+  position: fixed; 
   top: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 3% 5%;
-  z-index: 10;
+  align-items: center;
+  padding: 1rem 5%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .navbar__brand {
-  width: 100px;
-  height: 100%;
+  width: 150px; 
+  height: auto;
+  display: flex;
+  align-items: center;
 }
 
 .brand__logo {
   width: 100%;
-  height: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .language__drop__down {
@@ -601,3 +606,29 @@ footer {
 }
 
 @media (min-width: 1254px) {}
+
+@media screen and (max-width: 1024px) {
+  .navbar__brand {
+    width: 120px;
+  }
+
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0.8rem 3%;
+  }
+  
+  .navbar__brand {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 0.5rem 2%;
+  }
+  
+  .navbar__brand {
+    width: 80px; /* Smaller size for mobile */
+  }
+}
