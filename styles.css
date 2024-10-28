@@ -28,23 +28,27 @@ body {
 
 
 .navbar {
-  position: absolute;
+  position: fixed; 
   top: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 3% 5%;
-  z-index: 10;
+  padding: 15px 5%;
+  z-index: 100; /* Increase z-index */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
 }
 
 .navbar__brand {
-  width: 100px;
-  height: 100%;
+  width: 120px; 
+  height: auto;
+  display: flex;
+  align-items: center;
 }
 
 .brand__logo {
   width: 100%;
-  height: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .language__drop__down {
@@ -412,6 +416,14 @@ footer {
     height: 100vh;
   }
 
+  .navbar {
+    padding: 10px 4%;
+  }
+  
+  .navbar__brand {
+    width: 90px;
+  }
+
   .hero__bg__overlay {
     height: 100vh;
   }
@@ -597,6 +609,16 @@ footer {
   .footer__row__3,
   .footer__row__4 {
     align-self: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 8px 3%;
+  }
+  
+  .navbar__brand {
+    width: 80px;
   }
 }
 
