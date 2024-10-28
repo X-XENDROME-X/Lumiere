@@ -22,24 +22,25 @@ body {
 .column__2,
 .column__3,
 .column__4 {
-
-  margin-right: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-right: 0;
 }
 
 
 .navbar {
-  position: absolute;
-  top: 0;
-  width: 100%;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.9);
+  height: 80px;
   display: flex;
-  justify-content: space-between;
-  padding: 3% 5%;
-  z-index: 10;
+  align-items: center;
 }
 
 .navbar__brand {
-  width: 100px;
-  height: 100%;
+  width: 120px;
+  height: auto;
+  padding: 0.5rem;
 }
 
 .brand__logo {
@@ -78,7 +79,8 @@ body {
 
 .navbar__nav__items {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .hero__bg__image__container {
@@ -377,19 +379,25 @@ body {
 }
 
 footer {
-  border-top: 8px solid #333;
   padding: 2rem 1rem;
-  color: #757575;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  background: rgba(0, 0, 0, 0.9);
+  border-top: 8px solid #333;
+}
+
+.footer__row__1 {
+  margin-bottom: 2rem;
 }
 
 .footer__row__2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer__row__3, 
+.footer__row__4 {
+  margin-bottom: 1.5rem;
 }
 
 .footer__row__1>h4 {
@@ -408,6 +416,23 @@ footer {
 }
 
 @media (min-width: 768px) {
+  .navbar {
+    padding: 1rem 2rem;
+  }
+
+  .navbar__brand {
+    width: 150px;
+  }
+
+  .footer__row__2 {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+  }
+
+  footer {
+    padding: 3rem 4rem;
+  }
+  
   .hero__bg__image__container {
     height: 100vh;
   }
@@ -490,11 +515,11 @@ footer {
 
 @media (min-width: 1024px) {
   .navbar {
-    padding: 2% 5%;
+    padding: 1rem 4rem;
   }
 
   .navbar__brand {
-    width: 150px;
+    width: 180px;
   }
 
   .signin__button {
@@ -581,16 +606,11 @@ footer {
   }
 
   footer {
-    padding: 2rem 20rem;
-    justify-content: flex-start;
-    text-align: left;
-    align-items: flex-start;
+    padding: 3rem 6rem;
   }
 
   .footer__row__2 {
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: nowrap;
+    gap: 4rem;
   }
 
   .footer__row__1,
